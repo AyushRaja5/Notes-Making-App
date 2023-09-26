@@ -1,0 +1,7 @@
+# ignore frontend nodemodule
+noteapp/node_modules
+
+
+
+# ignore backend nodemodule
+Sever/node_modules
