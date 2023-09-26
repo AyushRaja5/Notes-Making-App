@@ -1,0 +1,32 @@
+/* CSS */
+
+@media (max-width: 768px) {
+    .hidemobile {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 767px) {
+    .hidedesktop {
+      display: none;
+    }
+  }
+  
+  .hidemobile{
+    height: 100%;
+    width: 25vw;
+    margin: 0;
+  }
+
+  .main-container {
+    flex: 1;
+    min-width: 0;
+    overflow: auto;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }

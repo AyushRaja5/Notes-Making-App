@@ -1,0 +1,57 @@
+.sidebar-container {
+    background: linear-gradient(to top, #757575, #f6e0be);
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    width: 100%;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+    
+  }
+  .logo-container img{
+    height: 80%;
+    width: 80%;
+  }
+
+  .sidebar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .sidebar-link {
+    text-decoration: none;
+    color: inherit; /* Optionally inherit the text color */
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+  }
+  
+  /* Styling for the icons within list items */
+  .sidebar-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    stroke-width: 1.5;
+    stroke: currentColor;
+  }
+  
+  .sidebar-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Styling for the last list item (Logout) */
+  .sidebar-item:last-child {
+    cursor: pointer;
+    /* Add other styles as needed */
+  }
+  

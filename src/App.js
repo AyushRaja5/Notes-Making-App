@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './pages/home/Home'
+import Login from './pages/login/Login'
+import Signup from './pages/signup/SignUp'
+import Profile from './pages/profile/Profile'
+import UpdateNote from './pages/updatenote/Updatenote'
+import NoPage from './pages/nopage/NoPage'
+import MyState from './context/data/myState';
+import AddNote from './pages/addnote/AddNote';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MyState>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/addnote' element={<AddNote />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/updatenote/:id' element={<UpdateNote />} />
+          <Route path='/nopage' element={<NoPage />} />
+        </Routes>
+      </Router>
+    </MyState>
   );
 }
 

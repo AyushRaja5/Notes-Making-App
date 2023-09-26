@@ -1,0 +1,59 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, #757575, #ffddaa);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 40;
+  }
+
+  .img-div{
+    display: flex;
+    justify-content: center;
+  }
+  .img{
+    width: 20%;
+    height: 30%;
+  }
+
+  .navbar-right {
+    background-color: #f6e0be;
+    padding: 0 10px;
+    width: 100%;
+    /* Add right section styles as needed */
+  }
+
+  .ul-container{
+    padding: 0 2%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .cursor-pointer{
+    width: 24%;
+    list-style-type: none;
+  }
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cursor-pointer span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .svgimg{
+    width: 50%;
+  }
